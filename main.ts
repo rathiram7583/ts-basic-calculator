@@ -12,11 +12,17 @@ addition(3,4);
 
 //SUBTRACTION
 var subtraction=(a:number,b:number)=>{
-    var difference:number=(a-b);
+    if(a>b){
+        var difference:number=(a-b);
+    }
+    else{
+        var difference:number=(b-a);
+    }
+    
     console.log("The difference between two number is:"+difference);
 }
 
-subtraction(10,4);
+subtraction(10,50);
 
 
 //multiplication
@@ -29,9 +35,15 @@ multiply(14,4);
 
 //Division
 var divide=(a:number,b:number)=>{
-    var divide:number=(a/b);
+    if(a>b){
+        var divide:number=(a/b);
+    }
+    else{
+        var divide:number=(b/a);
+    }
+    
     console.log("The division of two number is:"+divide);
 }
 
-divide(12,4);
+divide(12,48);
 
